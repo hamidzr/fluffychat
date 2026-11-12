@@ -144,7 +144,7 @@ class EnterNameView extends StatelessWidget {
 }
 ```
 
-Views should just contain code which describes the view. All other parameters or logic should be in the controller. The job of the view class is just to take the current state and build the widget tree and pipe the callbacks back. If there is any calulation necessary which is not solveable as a simple if-else or switch statement, it should be done in an external helper function unter `/lib/utils/`.
+Views should just contain code which describes the view. All other parameters or logic should be in the controller. The job of the view class is just to take the current state and build the widget tree and pipe the callbacks back. If there is any calculation necessary which is not solvable as a simple if-else or switch statement, it should be done in an external helper function under `/lib/utils/`.
 
 All file names must be lower_snake_case. All views must have a `View` suffix and all controller must have a `Controller` suffix. Widgets may have a controller too but they should pass the callbacks back to the view where possible. Calling one line methods directly in the view is only recommended if there is no need to pass a parameter.
 
